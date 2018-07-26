@@ -1,0 +1,378 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+  color: #343536;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+  }
+}
+header {
+  display: flex;
+position: fixed;
+z-index: 1;
+align-items: center;
+height: 69px;
+width: 100%;
+border-bottom: 1px solid #d3d3d3;
+background-color: white;
+}
+.bold{
+  font-weight: 900;
+}
+.light{
+  font-weight: 300;
+  color: #d3d3d3;
+}
+.container{
+  max-width: 1280px;
+  margin:0 auto;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  padding: 2rem 1.5rem;
+}
+header.container{
+  display: flex;
+  align-items: center;
+  padding: 0 15rem;
+  height: 64px;
+  background-color: white;
+}
+.logo {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.logo img{
+  height: 64px;
+  padding-left: 24px;
+}
+.logo .img-container img {
+  height: 3rem;
+}
+nav {
+  display: block;
+}
+nav ul{
+  display: flex;
+  padding-left: 1rem;
+}
+nav ul li{
+  padding-left: 1rem;
+}
+ol, ul{
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  transition-duration: .4s;
+}
+nav ul li a:hover{
+  color: purple;
+}
+
+.mobile-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.mobile-nav img{
+  height: 2rem;
+}
+@media only scren and (max-width: 1024px){
+  .logo {
+    width: 30%;
+    flex-grow: 1;
+  }
+}
+
+.content .container:nth-child(2n+1){
+  background-color: #d3d3d3;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+.banner .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.banner .img-container img{
+  width: 100%;
+  height: auto;
+}
+.banner a{
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+  }
+
+.headline{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  width: 30%;
+}
+.headline h2{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+.headline .button{
+  color: white;
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: black;
+  font-size: 1.5rem;
+  transition-duration: .4s;
+}
+.button:hover{
+  background-color: purple;
+  cursor: pointer;
+}
+
+.information {
+  display:flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .information {
+    flex-flow: column;
+  }
+
+.info-main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.info-main .img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-main .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.info-main h1{
+  margin-top: 2rem;
+}
+
+.info-main p{
+  margin-top: 1.5rem;
+}
+
+.source{
+  font-size: .85rem;
+  font-family: Helvetica,sans-serif;
+}
+.secondary{
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  margin-right: -1.5rem;
+  border-left: 1px solid #d3d3d3;
+  margin-left: 1.5rem;
+}
+.info {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid #d3d3d3;
+  transition-duration: .4s;
+}
+.info:hover{
+  background-color: purple;
+}
+.info .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+.info .img-container img {
+  width: 100%;
+  height: auto;
+}
+.info .data{
+  width: 65%;
+  display: flex;
+  flex-flow: column;
+  margin-left: 1rem;
+}
+
+.info:last-child {
+  background-color: #d3d3d3;
+  border-bottom: none;
+}
+
+.course h1 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2rem 0;
+  padding: 0 4.5rem;
+}
+
+.courseinfo {
+  min-width: 235px;
+  width: 30%;
+  display: flex;
+  flex-flow: column;
+  margin: 2rem auto;
+  background-color: whitesmoke;
+  padding-bottom: 1.5rem;
+  transition-duration:  .4s;
+}
+
+.courseinfo:hover{
+  background-color: purple;
+}
+.courseinfo .img-container{
+  width: 100%;
+}
+
+.courseinfo .img-container img {
+  height: auto;
+  width: 100%;
+}
+
+.courseinfo h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.courseinfo p{
+  margin: 0.5rem 1rem;
+}
+
+.thesis {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.thesis h1 {
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.mainvid {
+  display: flex;
+  flex-flow: column;
+  width: 60%;
+}
+
+.vid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vid-container video {
+  width: 100%;
+  height: auto;
+  background-color: #d3d3d3;
+}
+.mainvid h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.mainvid p{
+  margin-top: 0.5rem;
+}
+
+.thesis .secondary {
+  margin-top: 0;
+  border-left: none;
+}
+
+.thesis .info:first-child {
+  background-color: #d3d3d3;
+}
+
+.info .data h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.thesis .info:last-child{
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 1024px) {
+  .thesis h2 {
+    display: none;
+  }
+
+footer {
+  display: flex;
+  border-top: 1px solid black;
+  align-items: center;
+  font-size: 0.75rem;
+}
+footer span{
+  flex-grow: 1;
+}
+
+footer nav ul{
+  display: flex;
+}
+
+footer nav ul li p {
+  padding-left: 1rem;
+}
+nav ul li {
+  padding-left: 1rem;
+}
+
+nav ul li a {
+  color: black;
+  transition-duration: .4s;
+}
+
+nav ul li a:hover{
+  color: purple;
+}
